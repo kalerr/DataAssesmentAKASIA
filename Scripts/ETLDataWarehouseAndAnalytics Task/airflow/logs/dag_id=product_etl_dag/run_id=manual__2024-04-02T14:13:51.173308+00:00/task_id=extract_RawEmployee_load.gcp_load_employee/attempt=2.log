@@ -1,0 +1,2 @@
+[2024-04-02T22:21:44.176+0800] {taskinstance.py:1969} INFO - Dependencies not met for <TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:13:51.173308+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2024-04-02T22:21:44.176+0800] {local_task_job_runner.py:160} INFO - Task is not able to be run

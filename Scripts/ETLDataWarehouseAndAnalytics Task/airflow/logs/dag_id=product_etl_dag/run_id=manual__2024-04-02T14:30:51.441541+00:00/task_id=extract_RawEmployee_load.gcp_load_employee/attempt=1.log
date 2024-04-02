@@ -1,0 +1,16 @@
+[2024-04-02T22:31:41.017+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:30:51.441541+00:00 [queued]>
+[2024-04-02T22:31:41.020+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:30:51.441541+00:00 [queued]>
+[2024-04-02T22:31:41.020+0800] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-02T22:31:41.026+0800] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): extract_RawEmployee_load.gcp_load_employee> on 2024-04-02 14:30:51.441541+00:00
+[2024-04-02T22:31:41.032+0800] {standard_task_runner.py:60} INFO - Started process 29355 to run task
+[2024-04-02T22:31:41.035+0800] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'product_etl_dag', 'extract_RawEmployee_load.gcp_load_employee', 'manual__2024-04-02T14:30:51.441541+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/9z/pmblcfnj66jbv4s_wjl_bmx80000gn/T/tmpzb4gc3o_']
+[2024-04-02T22:31:41.038+0800] {standard_task_runner.py:88} INFO - Job 35: Subtask extract_RawEmployee_load.gcp_load_employee
+[2024-04-02T22:31:41.062+0800] {task_command.py:423} INFO - Running <TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:30:51.441541+00:00 [running]> on host kalers-mbp
+[2024-04-02T22:31:41.150+0800] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='product_etl_dag' AIRFLOW_CTX_TASK_ID='extract_RawEmployee_load.gcp_load_employee' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T14:30:51.441541+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T14:30:51.441541+00:00'
+[2024-04-02T22:31:51.126+0800] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-04-02T22:31:51.130+0800] {process_utils.py:131} INFO - Sending 15 to group 29355. PIDs of all processes in the group: [29355]
+[2024-04-02T22:31:51.130+0800] {process_utils.py:86} INFO - Sending the signal 15 to group 29355
+[2024-04-02T22:32:51.189+0800] {process_utils.py:149} WARNING - process psutil.Process(pid=29355, name='Python', status='running', started='22:31:41') did not respond to SIGTERM. Trying SIGKILL
+[2024-04-02T22:32:51.206+0800] {process_utils.py:86} INFO - Sending the signal 9 to group 29355
+[2024-04-02T22:32:51.219+0800] {process_utils.py:79} INFO - Process psutil.Process(pid=29355, name='Python', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='22:31:41') (29355) terminated with exit code -9
+[2024-04-02T22:32:51.222+0800] {standard_task_runner.py:175} ERROR - Job 35 was killed before it finished (likely due to running out of memory)

@@ -1,0 +1,12 @@
+[2024-04-02T22:13:55.869+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:13:51.173308+00:00 [queued]>
+[2024-04-02T22:13:55.871+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:13:51.173308+00:00 [queued]>
+[2024-04-02T22:13:55.872+0800] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-02T22:13:55.877+0800] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): extract_RawEmployee_load.gcp_load_employee> on 2024-04-02 14:13:51.173308+00:00
+[2024-04-02T22:13:55.881+0800] {standard_task_runner.py:60} INFO - Started process 26989 to run task
+[2024-04-02T22:13:55.883+0800] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'product_etl_dag', 'extract_RawEmployee_load.gcp_load_employee', 'manual__2024-04-02T14:13:51.173308+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/9z/pmblcfnj66jbv4s_wjl_bmx80000gn/T/tmpbu5g9lzf']
+[2024-04-02T22:13:55.885+0800] {standard_task_runner.py:88} INFO - Job 24: Subtask extract_RawEmployee_load.gcp_load_employee
+[2024-04-02T22:13:55.912+0800] {task_command.py:423} INFO - Running <TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:13:51.173308+00:00 [running]> on host kalers-mbp
+[2024-04-02T22:13:56.003+0800] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='product_etl_dag' AIRFLOW_CTX_TASK_ID='extract_RawEmployee_load.gcp_load_employee' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T14:13:51.173308+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T14:13:51.173308+00:00'
+[2024-04-02T22:20:48.589+0800] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-04-02T22:20:48.595+0800] {process_utils.py:131} INFO - Sending 15 to group 26989. PIDs of all processes in the group: [26989]
+[2024-04-02T22:20:48.595+0800] {process_utils.py:86} INFO - Sending the signal 15 to group 26989

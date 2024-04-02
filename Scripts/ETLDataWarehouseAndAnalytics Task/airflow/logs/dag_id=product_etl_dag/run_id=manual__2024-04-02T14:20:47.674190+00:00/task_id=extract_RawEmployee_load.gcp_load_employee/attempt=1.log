@@ -1,0 +1,14 @@
+[2024-04-02T22:23:04.948+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:20:47.674190+00:00 [queued]>
+[2024-04-02T22:23:04.950+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:20:47.674190+00:00 [queued]>
+[2024-04-02T22:23:04.951+0800] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-02T22:23:04.956+0800] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): extract_RawEmployee_load.gcp_load_employee> on 2024-04-02 14:20:47.674190+00:00
+[2024-04-02T22:23:04.963+0800] {standard_task_runner.py:60} INFO - Started process 28286 to run task
+[2024-04-02T22:23:04.966+0800] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'product_etl_dag', 'extract_RawEmployee_load.gcp_load_employee', 'manual__2024-04-02T14:20:47.674190+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/var/folders/9z/pmblcfnj66jbv4s_wjl_bmx80000gn/T/tmp0lxg5nro']
+[2024-04-02T22:23:04.968+0800] {standard_task_runner.py:88} INFO - Job 29: Subtask extract_RawEmployee_load.gcp_load_employee
+[2024-04-02T22:23:04.988+0800] {task_command.py:423} INFO - Running <TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:20:47.674190+00:00 [running]> on host kalers-mbp
+[2024-04-02T22:23:05.072+0800] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='product_etl_dag' AIRFLOW_CTX_TASK_ID='extract_RawEmployee_load.gcp_load_employee' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T14:20:47.674190+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T14:20:47.674190+00:00'
+[2024-04-02T22:28:37.004+0800] {process_utils.py:131} INFO - Sending 15 to group 28286. PIDs of all processes in the group: [28286]
+[2024-04-02T22:28:37.010+0800] {process_utils.py:86} INFO - Sending the signal 15 to group 28286
+[2024-04-02T22:28:42.919+0800] {taskinstance.py:1969} INFO - Dependencies not met for <TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:20:47.674190+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2024-04-02T22:28:42.920+0800] {taskinstance.py:1969} INFO - Dependencies not met for <TaskInstance: product_etl_dag.extract_RawEmployee_load.gcp_load_employee manual__2024-04-02T14:20:47.674190+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2024-04-02T22:28:42.923+0800] {local_task_job_runner.py:160} INFO - Task is not able to be run

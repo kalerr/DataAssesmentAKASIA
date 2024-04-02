@@ -1,0 +1,14 @@
+[2024-04-02T22:53:54.689+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_and_load.gcp_load manual__2024-04-02T14:53:48.834491+00:00 [queued]>
+[2024-04-02T22:53:54.694+0800] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_and_load.gcp_load manual__2024-04-02T14:53:48.834491+00:00 [queued]>
+[2024-04-02T22:53:54.695+0800] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-02T22:53:54.708+0800] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): gcp_load> on 2024-04-02 14:53:48.834491+00:00
+[2024-04-02T22:53:54.714+0800] {standard_task_runner.py:60} INFO - Started process 31988 to run task
+[2024-04-02T22:53:54.718+0800] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'extract_and_load', 'gcp_load', 'manual__2024-04-02T14:53:48.834491+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/mssql_extract_load_gbq.py', '--cfg-path', '/var/folders/9z/pmblcfnj66jbv4s_wjl_bmx80000gn/T/tmphevoj95t']
+[2024-04-02T22:53:54.720+0800] {standard_task_runner.py:88} INFO - Job 47: Subtask gcp_load
+[2024-04-02T22:53:54.756+0800] {task_command.py:423} INFO - Running <TaskInstance: extract_and_load.gcp_load manual__2024-04-02T14:53:48.834491+00:00 [running]> on host kalers-mbp
+[2024-04-02T22:53:54.825+0800] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='extract_and_load' AIRFLOW_CTX_TASK_ID='gcp_load' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T14:53:48.834491+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T14:53:48.834491+00:00'
+[2024-04-02T22:53:55.065+0800] {logging_mixin.py:188} INFO - Data load error: 'NoneType' object has no attribute 'values'
+[2024-04-02T22:53:55.065+0800] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-02T22:53:55.070+0800] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=extract_and_load, task_id=gcp_load, execution_date=20240402T145348, start_date=20240402T145354, end_date=20240402T145355
+[2024-04-02T22:53:55.099+0800] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-02T22:53:55.110+0800] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
