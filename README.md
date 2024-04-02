@@ -53,8 +53,19 @@ Before you begin, ensure you have the following:
 2. **Configure BigQuery:**
    - Define the table schema for `PositionHistory` data within BigQuery.
    - Set the data source to your Spreadsheet. This will synchronize the Spreadsheet data with the BigQuery table in real-time.
+  
+3. **Schedule ETL Process with crontab:**
+   - Due to difficulties in setting up Airflow for SQL Server or Pentaho on M1 Chip, we will use crontab to schedule our etl.py
+   - Set up cron tab by running:
+     ```bash
+     crontab -e
+     ```
+   - Set the schedule to run every 3 hours :
+     ```
+     0 */3 * * * DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics Task/etl.py
+     ```  
 
-3. **Run ETL Process:**
+4. **Run ETL Process:**
    - Navigate to the ETL script directory:
      ```bash
      cd DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics\ Task
@@ -72,7 +83,8 @@ Before you begin, ensure you have the following:
      python etl.py
      ```
 
-4. **View Results:**
+5. **View Results:**
+   - We can check our etl logs at `DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics Task/etl_log.txt`
    - Historical training data for employees can be found at `DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics Task/historical_training_data.csv`.
    - The combined SQL Server data and Spreadsheet data are now available in your BigQuery Data Warehouse.
    - Access the Looker dashboard to visualize your data [here](https://lookerstudio.google.com/reporting/aa572934-180d-43ed-b901-1c8a8a62d46b)
