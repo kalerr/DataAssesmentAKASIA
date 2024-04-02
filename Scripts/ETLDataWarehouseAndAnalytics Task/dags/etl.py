@@ -50,7 +50,11 @@ def sql_server_extract():
 def gcp_load_employee(df):
     #
     try:
+<<<<<<< HEAD
         credentials = service_account.Credentials.from_service_account_file( '/Users/kalerbramastha/Library/Mobile Documents/com~apple~CloudDocs/bram/career_assessment/akasia_de/DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics Task/SA.json')
+=======
+        credentials = service_account.Credentials.from_service_account_file( '/Users/kalerbramastha/Library/CloudStorage/OneDrive-Personal/career_assessment/akasia_de/Scripts/ETL, Data Warehouse and Analytics Task/SA.json')
+>>>>>>> 6c15070 (attempt at using datafusion, pentaho and airflow failed)
         project_id = "data-test-4"
         dateset_ref = "dwh"
         df = df.astype(str)
