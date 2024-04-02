@@ -80,7 +80,7 @@ def load_fact_to_gbq(df,SA_PATH):
     dfToGBQ = df.to_gbq(destination_table=f'{dateset_ref}.FactTrainingDays',  project_id=project_id, credentials=credentials, if_exists="replace")
     return dfToGBQ
 
-SA_path = 'SA.json'
+SA_path = '/Users/kalerbramastha/Library/Mobile Documents/com~apple~CloudDocs/bram/career_assessment/akasia_de/Scripts/ETLDataWarehouseAndAnalytics Task/SA.json'
 do_logging(datetime.datetime.now(),"ETL started")
 print(f'ETL is succesfull at {datetime.datetime.now()}')
 

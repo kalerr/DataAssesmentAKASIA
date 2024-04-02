@@ -1,0 +1,8 @@
+2024-04-03 03:43:37,518 - INFO - ETL started at 2024-04-03 03:43:37.518288
+2024-04-03 03:45:36,554 - INFO - ETL started at 2024-04-03 03:45:36.554280
+2024-04-03 03:45:53,262 - INFO - ETL started at 2024-04-03 03:45:53.262899
+2024-04-03 03:45:58,048 - INFO - Extracting Employee from SQL Server at 2024-04-03 03:45:58.047979
+2024-04-03 03:46:00,778 - INFO - Extracting Position History from BigQuery at 2024-04-03 03:46:00.778952
+2024-04-03 03:46:00,785 - INFO - Merged Employee and Position History at 2024-04-03 03:46:00.785151
+2024-04-03 03:46:00,787 - INFO - Merge saved to historical_training_data.csv at 2024-04-03 03:46:00.787069
+2024-04-03 03:46:03,016 - INFO - Loaded fact df to BigQuery at 2024-04-03 03:46:03.016057

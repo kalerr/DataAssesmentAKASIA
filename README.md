@@ -19,7 +19,7 @@ Before you begin, ensure you have the following:
 ## Usage Instructions
 
 1. **Prepare SQL Server Data:**
-   - Execute the script located at `DataAssesmentAKASIA/Scripts/DataAndQueryTask/script.sql` using your preferred SQL editor.
+   - Execute the script located at `Scripts/DataAndQueryTask/script.sql` using your preferred SQL editor.
    - Our SQL Server data is now ready for the next steps.
    - We can display all employee data with their current position (current year is 2024, so the query will return nothing since every potition ended at december 2022) information by
      ```
@@ -84,8 +84,8 @@ Before you begin, ensure you have the following:
      ```
 
 5. **View Results:**
-   - We can check our etl logs at `DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics Task/etl_log.txt`
-   - Historical training data for employees can be found at `DataAssesmentAKASIA/Scripts/ETLDataWarehouseAndAnalytics Task/historical_training_data.csv`.
+   - We can check our etl logs at `Scripts/ETLDataWarehouseAndAnalytics Task/etl_log.txt`
+   - Historical training data for employees can be found at `Scripts/ETLDataWarehouseAndAnalytics Task/historical_training_data.csv`.
    - The combined SQL Server data and Spreadsheet data are now available in your BigQuery Data Warehouse.
    - Access the Looker dashboard to visualize your data [here](https://lookerstudio.google.com/reporting/aa572934-180d-43ed-b901-1c8a8a62d46b)
 
