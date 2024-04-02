@@ -1,8 +1,8 @@
 {
   "type": "service_account",
   "project_id": "data-test-4",
-  "private_key_id": "", // your key
-  "private_key": "", //your key
+  "private_key_id": "", 
+  "private_key": "", 
   "client_email": "local-mac@data-test-4.iam.gserviceaccount.com",
   "client_id": "103540557330679051835",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
