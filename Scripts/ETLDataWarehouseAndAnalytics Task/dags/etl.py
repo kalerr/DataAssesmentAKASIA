@@ -28,7 +28,7 @@ def sql_server_extract():
 def gcp_load_employee(employee_dict: dict, position_history_dict: dict):
     #
     try:
-        credentials = service_account.Credentials.from_service_account_file( '/Users/kalerbramastha/Library/CloudStorage/OneDrive-Personal/career_assessment/akasia_de/Scripts/ETL, Data Warehouse and Analytics Task/service_account.json')
+        credentials = service_account.Credentials.from_service_account_file( '/Users/kalerbramastha/Library/CloudStorage/OneDrive-Personal/career_assessment/akasia_de/Scripts/ETL, Data Warehouse and Analytics Task/SA.json')
         project_id = "data-test-4"
         dateset_ref = "dwh"
         # 
